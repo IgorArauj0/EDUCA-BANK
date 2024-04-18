@@ -1,3 +1,12 @@
+:root {
+    --font-color: white;
+    --module-size: 1rem;
+    --font-family:helvetica, arial, sans-serif;
+    --primary-color:tomato;
+}
+
+
+
 /*Configuração Padrão de início*/
 *{
     margin: 0;
@@ -12,9 +21,13 @@ body {
     width: 100vw;
 }
 
+ 
+
+
 header { /*Chamamos nosso Header para estilização*/ 
     background-color: rgb(78, 135, 168); /*Cor de fundo*/
     padding: 10vh; /*ajustamos o tamanho do preenchimento   --  podemos usar 70px*/
+   
 }
 
 .menu-header { /*Aqui é onde estão armazenados nossas listas do Header*/
@@ -24,7 +37,7 @@ header { /*Chamamos nosso Header para estilização*/
 }
 
 .menu-header > li > a { /*Aqui sabemos que dentro da nossa LI existe uma TAG de Link "a" */
-   color: white; /*Cor da letra*/
+   color: var(--font-color); /*Cor da letra*/
    text-decoration: none; /*Desabilitando a decoração dos textos de Link*/
    font-size: 13px; /*Tamanho da letra*/
 }
@@ -40,13 +53,14 @@ header { /*Chamamos nosso Header para estilização*/
 
 #sessao { /*Aqui chamamos nosso primeiro ID para estilização*/
     padding: 30vh; /*Atribuimos um tamanho de preenchimento  -- podemos usar 200px*/
+    width: auto;
     background: linear-gradient(180deg, #c0cdcf 8.33%, rgba(90, 168, 168) 100%); /*Uma cor com Degradê*/
     flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
 }
 
 
 #sessao > h1 { /*Alterando nosso Título*/
-    font-size: 45px; /*Tamanho da letra*/
+    font-size: 3rem; /*Tamanho da letra*/
     color: rgba(0, 0, 0, 0.712); /*Cor da letra */
 }
 
@@ -64,23 +78,24 @@ header { /*Chamamos nosso Header para estilização*/
     
 }
 
-#sessao > button a {
-    text-decoration: none;
-    color: rgb(19, 153, 108); /*Cor da letra*/
-    font-size: 15px; /*Tamanho da letra dentro do button*/
+#sessao > a > button {
+    padding: 1.5rem;
+    border-radius: 50px; /*Arredondamento da borda do botão*/
+    width: 20vw;
+    cursor: pointer;
+    margin-top: 10px;
+    color: rgb(19, 153, 108);
+    border-color: rgb(19, 153, 108);
 }
 
-#sessao > button:hover { /*Efeito ao passar o cursor */
-    background-color: rgb(90, 168, 168); /*Atribuimos a cor que ficará*/
-    border-color: white; /*cor da borda ao passar o cursor*/
-    transition: 0.5s;
-    }
-
-#sessao > button a:hover{
+#sessao > a button:hover{
     color: white;
+    background-color: rgb(19, 153, 108);
     transition: 0.8s;
+    border-color: white;
 }
-      
+
+
 
 
 
@@ -92,7 +107,7 @@ header { /*Chamamos nosso Header para estilização*/
 }
 
 
-#app > div > button { /*Aqui chamamos nosso botão para estilização*/
+#app > div > a button { /*Aqui chamamos nosso botão para estilização*/
     padding: 20px; /*Preenchimento do nosso botão*/
     border-radius: 50px; /*Arredondamento da borda do botão*/
     width: 20vw; /*Tamanho lateral do botão (largura) ----  podemos usar 300px*/
@@ -108,14 +123,14 @@ header { /*Chamamos nosso Header para estilização*/
     font-size: 43px; /*Alteração do tamanho da letra*/
 }
 
-#app > div button:hover{ /*Aqui chamamos nosso botão para estilização ao passar o Cursor*/
+#app > div a button:hover{ /*Aqui chamamos nosso botão para estilização ao passar o Cursor*/
     background-color: rgb(90, 168, 168); /*A cor de fundo mudará para esta*/
     transition: 0.8s;
     border-color: white; /*Cor da borda*/
-    
+    color: white;
 }
 
-#app div button a {
+#app div a {
     text-decoration: none;
     color: rgb(19, 153, 108); /*Cor da letra*/
     font-size: 15px; /*Tamanho da letra dentro do button*/
@@ -166,7 +181,7 @@ header { /*Chamamos nosso Header para estilização*/
 #container button { /*Chamamos nosso Button para alteração*/
     padding: 20px; /*Preenchimento do Botão*/
     border-radius: 50px; /*Arredondamento da borda do botão*/
-    width: 15vw; /*Largura do botão*/
+    width: 15vw; /*Largura do botão*/ 
     color: rgb(50, 50, 226); /*Cor da letra*/
     border-color: rgb(50, 50, 226); /*Cor da borda*/
     margin: 60px; /*Margem em torno no botão*/
@@ -274,4 +289,56 @@ footer img { /*Trabalhando nas IMG dentro do Footer*/
 .footer-div a:hover {
     color: crimson;
     transition: 0.5s;
+}
+
+
+
+
+
+@media screen and (max-width: 1045px) {
+
+   
+
+    /* Arrumar a responsividade dos Botoes */
+    #sessao a button {
+        font-size: 0.7rem;
+        width: 15rem;
+        padding: 0.9rem;
+    }
+
+    #app > div > a button {
+        font-size: 0.7rem;
+        width: 15rem;
+        padding: 0.9rem;
+    }
+
+    #container a button {
+        font-size: 0.7rem;
+        width: 15rem;
+        padding: 0.9rem;
+        
+    }
+
+
+    /* Arrumando as sessões individualmente */
+   #sessao h1 {
+    font-size: 3rem;
+   }
+
+   #sessao p {
+    font-size: 2rem;
+   }
+
+
+   #app div img {
+    width: 20rem;
+    height: auto;
+   }
+
+
+   #app div p {
+    font-size: 2rem;
+    text-align: left;
+   }
+    
 }
