@@ -12,7 +12,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahom+a, sans-serif;
 }
 
 /*Chamamos o body para limitar o tamanho da altura e tamanho da página*/
@@ -295,7 +295,7 @@ footer img { /*Trabalhando nas IMG dentro do Footer*/
 
 
 
-@media screen and (max-width: 1045px) {
+@media screen and (max-width: 1366px) {
 
    
 
@@ -330,6 +330,10 @@ footer img { /*Trabalhando nas IMG dentro do Footer*/
    }
 
 
+
+
+
+
    #app div img {
     width: 20rem;
     height: auto;
@@ -340,5 +344,249 @@ footer img { /*Trabalhando nas IMG dentro do Footer*/
     font-size: 2rem;
     text-align: left;
    }
+
+
+
+
+
+
+   #container h2 {
+    margin-top: -12rem;
+   }
+
+
+
+
+
+
+   footer img {
+    margin-top: -1px;
+   }
+
+
+
+
+}
+
+@media screen and (max-width: 991px) {
+
+#app div img {
+    width: 18rem;
+    height: auto;
+    margin-right: 20px;
+}
+
+#app div {
+    margin-left: -3rem;
+}
+
+
+
+
+#container img {
+    margin-left: -0.1rem;
+}
+
+footer p {
+    font-size: 0.6rem;
+}
+
+footer a {
+    font-size: 0.6rem;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width: 767px) {
+.menu-header {
+    display: flex;
+    justify-content: center;
+}
+
+#sessao p {
+    font-size: 1.8rem;
+    margin: 15px 0;
+}
+
+
+
+
+
+#container-cofre img {
+    width: 16rem;
+    margin-top: -0.3rem;
+}
+
+
+
+
+#container-cofre h2 {
+    font-size: 1.8rem;
+}
+
+#container-cofre p {
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: -30px;
+}
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    #app {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #app div p {
+        text-align: left;
+        margin-right: -2rem;
+    } 
+
     
+
+
+    #app div img {
+        margin-top: 2rem;
+        width: 25rem;
+    }
+
+    #container-cofre {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #container-cofre img {
+        width: 10rem;
+        height: auto;
+        margin-left: 12.2rem;
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+
+    header {
+        padding: 5vh;
+    }
+
+
+    .menu-header li a {
+        font-size: 0.5rem;
+    }
+    #sessao {
+        display: block;
+        justify-content: center;
+        padding: 30vh;
+    }
+
+    #sessao h1 {
+      font-size: 2rem; 
+    }
+    #sessao p {
+        font-size: 1rem;
+    }
+
+    #sessao a button {
+        width: 11rem;
+        font-size: 0.6rem;
+    }
+
+
+
+    
+    #app {
+        padding: 30vh;
+    }
+
+
+     #app div p {
+        font-size: 1.4rem; 
+        margin-left: 2rem;
+        text-align: left;
+     }
+
+     #app a button {
+        width: 8rem;
+        font-size: 0.5rem;
+     }
+
+     #app div img {
+        width: 17rem;
+        margin-left: -0.5rem;
+     }
+
+
+
+
+
+     #container h2{
+       font-size: 20px;
+     }
+
+     #container p {
+        font-size: 1rem;
+        text-align: left;
+     }
+
+     #container {
+        padding: 12vh;
+     }
+
+
+     #container img {
+        margin-left: 3rem;
+     }
+
+
+
+
+
+
+    #container-cofre{
+        padding: 15vh;
+        text-align: center;
+    }
+    
+
+    #container-cofre img {
+       margin-left: 2rem;
+    }
+    #container-cofre p {
+        font-size: 1.3rem;
+        font-weight: 500;
+    }
+     
+    #container-cofre h2 {
+        font-size: 2rem;
+    }
+
+
+
+
+
+    footer {
+        padding: 5vh;
+    }
+
+    footer p {
+        font-size: 0.5rem;
+    }
+
+    footer a{
+        font-size: 0.5rem;
+    }
 }
