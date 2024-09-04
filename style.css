@@ -112,7 +112,8 @@ header {
     /*Alinhamento na Horizontal*/
     align-items: center;
     /*Alinhamento Vertical*/
-    background-color: rgb(226, 233, 233); /*cor de fundo*/
+    background-color: rgb(226, 233, 233);
+    /*cor de fundo*/
 }
 
 .div1 p {
@@ -122,7 +123,8 @@ header {
     /*Cor da letra*/
     font-weight: 500;
     /*Peso da Font*/
-    margin-bottom: 20px; /*Espaçamento Inferior*/
+    margin-bottom: 20px;
+    /*Espaçamento Inferior*/
 }
 
 .div1 a button {
@@ -138,16 +140,16 @@ header {
     /*Cor da Borda*/
 }
 
-.div1 a button:hover{
-     /*Aplicando o Hover no Botão*/
-     background-color: rgb(19, 138, 43);
-     /*Alterando a cor de Fundo*/
-     color: white;
-     /*Cor da Letra ao passar o Mouse*/
-     border-color: white;
-     /*Cor da Borda ao passar o Mouse*/
-     transition: 0.8s;
-     /*Tempo de transição*/
+.div1 a button:hover {
+    /*Aplicando o Hover no Botão*/
+    background-color: rgb(19, 138, 43);
+    /*Alterando a cor de Fundo*/
+    color: white;
+    /*Cor da Letra ao passar o Mouse*/
+    border-color: white;
+    /*Cor da Borda ao passar o Mouse*/
+    transition: 0.8s;
+    /*Tempo de transição*/
 }
 
 .div2 img {
@@ -167,42 +169,140 @@ header {
 
 .section-03 {
     padding: 200px;
-    background-color: rgb(226, 233, 233); /*cor de fundo*/
+    background-color: rgb(226, 233, 233);
+    /*cor de fundo*/
 }
 
-.section-03 h2 { /*Estilização do Subtítulo*/
-text-align: center; /*Alinhamento ao centro*/
-color: rgb(34, 34, 74); /*Cor da letra*/
-font-size: 40px; /*Tamanho da letra*/
-margin-top: -170px; /*Espaçamento em relação a sessão de cima*/
+.section-03 h2 {
+    /*Estilização do Subtítulo*/
+    text-align: center;
+    /*Alinhamento ao centro*/
+    color: rgb(34, 34, 74);
+    /*Cor da letra*/
+    font-size: 40px;
+    /*Tamanho da letra*/
+    margin-top: -170px;
+    /*Espaçamento em relação a sessão de cima*/
 }
 
-.section-03 p { /*Estilização dos Parágrafos*/
+.section-03 p {
+    /*Estilização dos Parágrafos*/
+    font-size: 20px;
+    /*Tamanho da letra*/
+    margin-top: 30px;
+    /*Margem superior*/
+    color: rgba(0, 0, 0, 0.564);
+    /*Cor da letra*/
+    text-align: justify;
+    /*Aqui justificamos o texto*/
+}
+
+.section-03 a button {
+    /*Estilização do Botão*/
+    padding: 20px;
+    /*Preenchimento do Botão*/
+    border-radius: 50px;
+    /*Arredondamento da borda do botão*/
+    width: 300px;
+    /*Largura do botão*/
+    color: rgb(50, 50, 226);
+    /*Cor da letra*/
+    border-color: rgb(50, 50, 226);
+    /*Cor da borda*/
+    font-size: 15px;
+    /*Tamanho da letra*/
+    margin-top: 40px;
+    /*Margin superior*/
+    margin-bottom: 40px;
+    /*Margin inferior*/
+}
+
+.line {
+    /*Estilização da Linha*/
+    width: 70%;
+    /*Largura da Linha*/
+    margin: 40px auto;
+    /*Espaçamento de 40px top e Bottom e esqueda e direita automáticas*/
+}
+
+.section-03 img {
+    /*Estilização da Imagem*/
+    margin-left: 200px;
+    /*Espaçamento a esquerda*/
+
+    /*IREMOS ALTERAR A FORMATAÇÃO DE ALINHAMENTO*/
+
+}
+
+
+.container-cofre {
+    /* Criação e estilização do Container Cofre*/
+    padding: 200px;
+    /*Preenchimento*/
+    background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg);
+    /*Filtro Gradient e imagem de fundo*/
+    background-attachment: fixed;
+    /*Deixando a imagem fixa*/
+    background-size: cover;
+    /*Tamanho da imagem = Total*/
+    background-position: center;
+    /*Posicionamento da imagem*/
+
+    display: flex; /*Tornando nossa sessão Flex*/
+    justify-content: space-evenly; /*Justificativa do conteúdo - Horizontal*/
+    align-items: center; /*Alinhamento na vertical*/
+}
+
+.div-cofre h2 { /*Estilizando o Subtítulo da sessão*/
+    color: white; /*Cor da letra*/
+    text-align: center; /*Alinhando o texto ao centro*/
+    font-size: 35px; /*Tamanho da letra*/
+    margin-left: 50px; /*Espaçamento lateral*/
+    margin-bottom: 30px; /*Espaçamento inferior*/
+}
+
+.div-cofre p { /*Estilizando o parágrafo*/
+    color: white; /*Cor da letra*/
     font-size: 20px; /*Tamanho da letra*/
-    margin-top: 30px; /*Margem superior*/
-    color: rgba(0, 0, 0, 0.564); /*Cor da letra*/
-    text-align: justify; /*Aqui justificamos o texto*/
+    margin-left: 50px; /*Margin da esquerda*/
 }
 
-.section-03 a button{ /*Estilização do Botão*/
-    padding: 20px; /*Preenchimento do Botão*/
-    border-radius: 50px; /*Arredondamento da borda do botão*/
-    width: 300px; /*Largura do botão*/ 
-    color: rgb(50, 50, 226); /*Cor da letra*/
-    border-color: rgb(50, 50, 226); /*Cor da borda*/
-    font-size: 15px; /*Tamanho da letra*/
-    margin-top: 40px; /*Margin superior*/
-    margin-bottom: 40px;/*Margin inferior*/
+.div-cofre span { /* Estilizando o Span*/
+    color: yellow; /*Cor da letra*/
+    font-weight: 600; /*Peso da font*/
 }
 
-.line { /*Estilização da Linha*/
-width: 70%;/*Largura da Linha*/
-margin: 40px auto; /*Espaçamento de 40px top e Bottom e esqueda e direita automáticas*/
+.container-cofre img { /*Estilizando a img do container-cofre*/
+    width: 380px; /*Largura da imagem*/
 }
 
-.section-03 img { /*Estilização da Imagem*/
-margin-left: 200px; /*Espaçamento a esquerda*/
 
-/*IREMOS ALTERAR A FORMATAÇÃO DE ALINHAMENTO*/
+footer {
+    padding: 140px;
+    background-color: rgb(24, 23, 23);
+    text-align: center;
+}
 
+.div-privacidade {
+    display: flex;
+    justify-content: space-between;
+}
+
+.div-privacidade p {
+    text-align: center;
+    color: rgb(179, 174, 174);
+}
+
+.div-privacidade a {
+    text-decoration: none;
+    color: white;
+}
+
+.div-privacidade a:hover {
+    color: purple;
+    transition: 0.8s;
+}
+
+.div-img-footer img {
+    margin-bottom: 35px;
 }
