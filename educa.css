@@ -23,7 +23,6 @@ body {
 
  
 
-
 header { /*Chamamos nosso Header para estilização*/ 
     background-color: rgb(78, 135, 168); /*Cor de fundo*/
     padding: 10vh; /*ajustamos o tamanho do preenchimento   --  podemos usar 70px*/
@@ -34,6 +33,7 @@ header { /*Chamamos nosso Header para estilização*/
     display: flex; /*Usamos para jogar os itens lado a lado*/
     justify-content: end; /*Aqui justificamos os itens desta lista para  o fim do Header*/
     flex-wrap: wrap; /*Usado para informar que os itens podem quebrar em telas menores*/
+    gap: 15px;
 }
 
 .menu-header > li > a { /*Aqui sabemos que dentro da nossa LI existe uma TAG de Link "a" */
@@ -46,9 +46,8 @@ header { /*Chamamos nosso Header para estilização*/
     color: rgb(81, 81, 228); /*Habilitando uma cor ao passar o mouse*/
     transition: 0.8s; /*Adicionamos aqui uma transição*/
 }
-.menu-header > li { /*Chamamos nossas Li diretamente para espaça-las*/
-    margin-left: 20px; /*Margem a esquerda para espaçamento*/
-}
+
+
 
 
 #sessao { /*Aqui chamamos nosso primeiro ID para estilização*/
@@ -68,20 +67,12 @@ header { /*Chamamos nosso Header para estilização*/
    font-size: 40px; /*Tamanho da letra*/
 }
 
-#sessao > button { /*Chamamos nosso Button que está dentro dessa primeira sessão*/
-    padding: 20px; /*Tamanho do preenchimento interno do botão*/
-    border-radius: 50px; /*Borda arredondada do botão*/
-    width: 20vw; /*Tamanho lateral do botão (largura) ----  podemos usar 300px*/
-    cursor: pointer;
-    border-color: rgb(19, 153, 108); /*Cor da borda*/
-    margin: 30px; /*Margem em volta do Button*/
-    
-}
+
 
 #sessao > a > button {
-    padding: 1.5rem;
+    padding: 1.2rem;
     border-radius: 50px; /*Arredondamento da borda do botão*/
-    width: 20vw;
+    width: 16rem;
     cursor: pointer;
     margin-top: 10px;
     color: rgb(19, 153, 108);
@@ -108,9 +99,9 @@ header { /*Chamamos nosso Header para estilização*/
 
 
 #app > div > a button { /*Aqui chamamos nosso botão para estilização*/
-    padding: 20px; /*Preenchimento do nosso botão*/
+    padding: 1.2rem; /*Preenchimento do nosso botão*/
     border-radius: 50px; /*Arredondamento da borda do botão*/
-    width: 20vw; /*Tamanho lateral do botão (largura) ----  podemos usar 300px*/
+    width: 16rem; /*Tamanho lateral do botão (largura) ----  podemos usar 300px*/
     color: rgb(19, 153, 108); /*Aqui atribuimos uma cor a letra do botão*/
     border-color: rgb(19, 153, 108); /*Cor da borda*/
     margin: 30px; /*Margem em volta do Button*/
@@ -220,7 +211,7 @@ header { /*Chamamos nosso Header para estilização*/
 }
 
 #container-cofre { /*Aqui começamos a estilizar nossa quarta section*/
-   background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(https://www.qsbank.com.br/wp-content/uploads/2022/02/texture4-1.jpg); /*Atribuimos antes da imagem uma cor para que fique sobreposta a imagem que está ao lado*/
+   background: linear-gradient(180deg, #0c16a364 8.33%, rgba(5, 39, 101, 0.745) 100%), url(imagens/img\ cofre\ fundo.jpg); /*Atribuimos antes da imagem uma cor para que fique sobreposta a imagem que está ao lado*/
    background-position: center; /*posicionamento da imagem*/
    background-attachment: fixed; /*Posicionamento fixo da imagem*/
    padding: 10%; /*altura da section*/
@@ -530,7 +521,7 @@ footer a {
 
 
     .menu-header li a {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
     #sessao {
         display: block;
@@ -560,8 +551,8 @@ footer a {
 
      #app div p {
         font-size: 1.4rem; 
-        margin-left: 2rem;
-        text-align: left;
+        
+        text-align: center;
      }
 
      #app a button {
@@ -579,7 +570,8 @@ footer a {
 
 
      #container h2{
-       font-size: 20px;
+       font-size: 1.5rem;
+       text-align: center;
      }
 
      #container p {
@@ -659,12 +651,6 @@ footer a {
         padding: 0.5rem;
         margin-left: 1px;
     }
-
-
-
-
-
-
 
 
 
@@ -752,7 +738,7 @@ footer a {
     }
 
     footer img {
-        width: 13.5rem;
+        width: 13rem;
     }
 
     footer a {
