@@ -17,8 +17,8 @@
 
 /*Chamamos o body para limitar o tamanho da altura e tamanho da página*/
 body {
-    height: 100vh;
-    width: 100vw;
+    height: 100vh; /*viewport height*/
+    width: 100vw; /*viewport width*/
 }
 
  
@@ -748,3 +748,10 @@ footer a {
         font-size: 0.5rem;
     }
 }
+
+
+/* EM  */
+/* REM */
+/* % */
+/* VH */
+/* VW */

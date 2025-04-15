@@ -1,0 +1,19 @@
+(em) (relativo ao elemento-pai)
+A unidade (em) é relativa ao tamanho da fonte do elemento pai
+
+Ou seja: se o elemento PAI tiver "font-size: 16px, então 2em = 32px 
+
+Mas se o elemento não for declarado, segue o jogo!
+Ainda sim, o navegador fará a conta com base nos 16px.
+
+
+(rem)  (Relativo ao elemento raiz=html)
+
+rem significa "root em" ou seja, relativo ao tamanho da fonte do <html>.
+
+é mais previsível e estável, porque ignora o tamanho do elemento-pai.
+
+Quando usar cada uma?
+em = ideal para (Margens internas, espaçamentos adaptáveis dentro de caixas/componentes)
+
+rem = ideal para tamanhos de font globais e layount consistentes
