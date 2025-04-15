@@ -1,0 +1,135 @@
+  /* Reset básico */
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      /*Ajuda a deixar os elementos organizados dentros das caixas*/
+  }
+
+  /* Estilizando o header */
+  header {
+      background-color: #ffffff;
+      padding: 1rem;
+      /* espaçamento interno */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      /* sombra leve no header */
+  }
+
+  /* Container do header */
+  .container-header {
+      display: flex;
+      /* organiza os itens em linha */
+      justify-content: space-evenly;
+      /* logo à esquerda, botão à direita */
+      align-items: center;
+      /* alinha verticalmente */
+      max-width: 1200px;
+      margin: 0 auto;
+      /* centraliza na tela colocando margim 0 no top e bottom e as laterais automática: */
+      padding: 0 1rem;
+      /* respiro lateral */
+  }
+
+  /* Estilizando a logo */
+  .logo {
+      height: 40px;
+      /* altura fixa */
+      width: auto;
+      /* mantém proporção da imagem */
+  }
+
+  /* Botão do header */
+  .btn-header {
+      padding: 0.5rem 1rem;
+      background-color: #0066cc;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+  }
+
+  /* Responsividade para telas menores */
+  @media (max-width: 600px) {
+      .container-header {
+          flex-direction: column;
+          /* empilha os itens podemos testar o row*/
+          gap: 1rem;
+          /* espaço entre logo e botão */
+      }
+
+      .logo {
+          height: 32px;
+          /* diminui a logo em telas menores */
+      }
+
+      .btn-header {
+          width: 100%;
+          /* botão ocupa largura total */
+          text-align: center;
+      }
+
+
+  }
+
+
+  /* Estilo da sessão principal - FORA do media query */
+/* Aplica o layout principal da seção destaque em telas grandes */
+.sessao-destaque {
+    display: flex; /* Ativa o Flexbox para organizar os elementos lado a lado */
+    flex-direction: row; /* Direção horizontal: imagem e texto lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: space-between; /* Espaço entre os elementos */
+    gap: 2rem; /* Espaço entre imagem e texto */
+    padding: 2rem; /* Espaçamento interno */
+    max-width: 1200px; /* Largura máxima da seção */
+    margin: 0 auto; /* Centraliza horizontalmente na tela */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+}
+
+/* Estilo da imagem dentro da seção destaque */
+.destaque-imagem img {
+    width: 100%; /* Ocupa toda a largura da div */
+    max-width: 500px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Arredonda os cantos da imagem */
+}
+
+/* Estilo da div que contém o texto */
+.destaque-texto {
+    max-width: 500px; /* Limita a largura para facilitar a leitura */
+}
+
+/* Estilo do título dentro do bloco de texto */
+.destaque-texto h2 {
+    font-size: 2rem; /* Tamanho grande para o título */
+    margin-bottom: 1rem; /* Espaço abaixo do título */
+}
+
+/* Estilo do parágrafo dentro do bloco de texto */
+.destaque-texto p {
+    font-size: 1.1rem; /* Tamanho agradável para leitura */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Responsividade: altera o layout para dispositivos com largura menor que 768px */
+@media (max-width: 768px) {
+    .sessao-destaque {
+        flex-direction: column; /* Empilha os elementos em coluna (imagem em cima, texto embaixo) */
+        align-items: center; /* Centraliza os itens no centro da seção */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .destaque-imagem,
+    .destaque-texto {
+        max-width: 100%; /* Ocupa toda a largura disponível em telas pequenas */
+    }
+
+    .destaque-texto h2 {
+        font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+    }
+
+    .destaque-texto p {
+        font-size: 1rem; /* Reduz o tamanho do parágrafo */
+    }
+}

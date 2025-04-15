@@ -17,3 +17,29 @@ Quando usar cada uma?
 em = ideal para (Margens internas, espaçamentos adaptáveis dentro de caixas/componentes)
 
 rem = ideal para tamanhos de font globais e layount consistentes
+
+
+
+
+
+
+
+
+Explicações importantes:
+
+➤ Por que flex?
+Usamos display: flex no .container-header para facilitar o alinhamento horizontal (logo + botão) e a adaptação com flex-direction: column em telas menores.
+
+➤ Por que max-width?
+O max-width: 1200px evita que o conteúdo fique muito esticado em telas grandes e mantém o design centrado com margin: 0 auto. A propriedade max-width define a largura máxima que um elemento pode ocupar. Isso significa que o elemento pode diminuir de tamanho conforme necessário (em telas menores), mas nunca vai ultrapassar o valor definido.
+
+➤ Por que usar media query?
+A @media (max-width: 600px) permite que a estrutura mude para um layout vertical quando a tela for pequena (como no celular), otimizando a usabilidade.
+
+
+➤ Por que usar border-box?
+Evita cálculos complicados de largura.
+
+Ajuda a manter o layout organizado.
+
+É muito usado em layouts responsivos, onde o espaço precisa ser bem controlado
