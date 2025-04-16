@@ -8,26 +8,26 @@
 
   /* Estilizando o header */
   header {
-      background-color: #ffffff;
+      background-color: #02031a;
       padding: 1rem;
       /* espaçamento interno */
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 20px red;
       /* sombra leve no header */
+      position: sticky;/*utilizado para deixar o menu suspenso */
+      top: 0; /*zerando a formatação/distância em relação ao topo*/
+      left: 0; /*zerando a formatação/distância em relação a esquerda*/
+      z-index: 999; /*Eixo Z utilizado para sobrepôr outros elementos que estarão dentro do site / precisa ser um valor maior que 0*/
   }
 
   /* Container do header */
   .container-header {
-      display: flex;
-      /* organiza os itens em linha */
-      justify-content: space-evenly;
-      /* logo à esquerda, botão à direita */
-      align-items: center;
-      /* alinha verticalmente */
-      max-width: 1200px;
-      margin: 0 auto;
-      /* centraliza na tela colocando margim 0 no top e bottom e as laterais automática: */
-      padding: 0 1rem;
-      /* respiro lateral */
+      display: flex; /* organiza os itens em linha */
+      justify-content: space-evenly;/* logo à esquerda, botão à direita */
+      align-items: center;/* alinha verticalmente */
+      max-width: 1200px; /*Limitando a largura máxima que a caixa do conteúdo deverá atingir*/
+      margin: 0 auto;/* centraliza na tela colocando margim 0 no top e bottom, e as laterais automática: */
+      padding: 0 1rem;/* respiro lateral */
+      
   }
 
   /* Estilizando a logo */
@@ -41,7 +41,7 @@
   /* Botão do header */
   .btn-header {
       padding: 0.5rem 1rem;
-      background-color: #0066cc;
+      background-color: #350479;
       color: white;
       border: none;
       border-radius: 4px;
@@ -82,9 +82,9 @@
     justify-content: space-between; /* Espaço entre os elementos */
     gap: 2rem; /* Espaço entre imagem e texto */
     padding: 2rem; /* Espaçamento interno */
-    max-width: 1200px; /* Largura máxima da seção */
     margin: 0 auto; /* Centraliza horizontalmente na tela */
     flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+    background-color: #021b2b;
 }
 
 /* Estilo da imagem dentro da seção destaque */
@@ -104,12 +104,14 @@
 .destaque-texto h2 {
     font-size: 2rem; /* Tamanho grande para o título */
     margin-bottom: 1rem; /* Espaço abaixo do título */
+    color: white;
 }
 
 /* Estilo do parágrafo dentro do bloco de texto */
 .destaque-texto p {
     font-size: 1.1rem; /* Tamanho agradável para leitura */
     line-height: 1.6; /* Espaçamento entre linhas */
+    color: white;
 }
 
 /* Responsividade: altera o layout para dispositivos com largura menor que 768px */

@@ -19,7 +19,9 @@ em = ideal para (Margens internas, espaçamentos adaptáveis dentro de caixas/co
 rem = ideal para tamanhos de font globais e layount consistentes
 
 
+vw = viewport width ele trabalha olhando para a LARGURA/WIDTH da tela em questão
 
+vh = viewport height trabalha olhando para a ALTURA/height da tela em questão 
 
 
 
