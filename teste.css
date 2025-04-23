@@ -50,12 +50,13 @@
   }
 
   /* Responsividade para telas menores */
-  @media (max-width: 600px) {
+  @media (max-width: 600px) { /*Irá funcionar em tamanho de tela entre 0 e 600px*/
       .container-header {
           flex-direction: column;
           /* empilha os itens podemos testar o row*/
           gap: 1rem;
           /* espaço entre logo e botão */
+          
       }
 
       .logo {
@@ -66,7 +67,7 @@
       .btn-header {
           width: 100%;
           /* botão ocupa largura total */
-          text-align: center;
+          text-align: center; 
       }
 
 
@@ -76,14 +77,14 @@
   /* Estilo da sessão principal - FORA do media query */
 /* Aplica o layout principal da seção destaque em telas grandes */
 .sessao-destaque {
-    display: flex; /* Ativa o Flexbox para organizar os elementos lado a lado */
+    display: flex; /* Ativa o Flexbox para organizar os elementos lado a lado*/
     flex-direction: row; /* Direção horizontal: imagem e texto lado a lado */
     align-items: center; /* Alinha verticalmente ao centro */
     justify-content: space-between; /* Espaço entre os elementos */
     gap: 2rem; /* Espaço entre imagem e texto */
     padding: 2rem; /* Espaçamento interno */
     margin: 0 auto; /* Centraliza horizontalmente na tela */
-    flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário */
+    flex-wrap: wrap; /* Permite que os elementos quebrem linha se necessário*/
     background-color: #021b2b;
 }
 
@@ -110,7 +111,7 @@
 /* Estilo do parágrafo dentro do bloco de texto */
 .destaque-texto p {
     font-size: 1.1rem; /* Tamanho agradável para leitura */
-    line-height: 1.6; /* Espaçamento entre linhas */
+    line-height: 1.6rem; /* Espaçamento entre linhas */
     color: white;
 }
 
@@ -133,5 +134,6 @@
 
     .destaque-texto p {
         font-size: 1rem; /* Reduz o tamanho do parágrafo */
-    }
+    }   
 }
+

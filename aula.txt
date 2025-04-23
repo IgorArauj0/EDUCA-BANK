@@ -38,10 +38,14 @@ O max-width: 1200px evita que o conteúdo fique muito esticado em telas grandes 
 ➤ Por que usar media query?
 A @media (max-width: 600px) permite que a estrutura mude para um layout vertical quando a tela for pequena (como no celular), otimizando a usabilidade.
 
-
 ➤ Por que usar border-box?
 Evita cálculos complicados de largura.
 
 Ajuda a manter o layout organizado.
 
 É muito usado em layouts responsivos, onde o espaço precisa ser bem controlado
+
+Link : https://www.w3schools.com/cssref/playdemo.php?filename=playcss_min-width
+
+
+https://www.frontendmentor.io/
