@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+padding: 5rem 2rem;
+background-color: blueviolet;
+display: flex;
+margin-bottom: 16px;
+justify-content: center;
+flex-wrap: wrap;
+align-content: center;
+
+}
+
+.container div {
+border: 2px solid orange;
+width: 20rem;
+height: 20rem;
+margin: 10px;
+max-width: 300px;
+}
