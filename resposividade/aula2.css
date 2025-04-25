@@ -4,22 +4,51 @@
     box-sizing: border-box;
 }
 
+header {
+    padding: 2rem 1rem; /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
+    background-color: aquamarine;
+}
 
 .container {
 padding: 5rem 2rem;
 background-color: blueviolet;
 display: flex;
-margin-bottom: 16px;
 justify-content: center;
-flex-wrap: wrap;
-align-content: center;
+flex-wrap: wrap; /*Fará com que as caixas possam ser quebradas se necessário (quando não houver espaço)*/
+align-content: center; /*propriedade que será usada para alinhar as caixas quando quebradas*/
 
 }
 
+.sessao01{
+background-image: url(../imagens/cliffs-9444605_1280.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+
+}
+
+
 .container div {
-border: 2px solid orange;
-width: 20rem;
-height: 20rem;
-margin: 10px;
-max-width: 300px;
+border: 10px solid orange; /*(2px = espessura da borda) (solid = Tipo da borda) (orange = cor da borda)*/
+width: 20rem; /*largura da caixa*/
+height: 20rem; /*Altura da caixa*/
+margin: 10px;/*Espaçamento de todos os lados externos da caixa usando o margin*/
+min-width: 299px;/*Limitando o tamanho mínimo que a caixa terá (ela não ficará menor que 299px)*/
+}
+
+.dombosco {
+    background-image: url(../imagens/brush-teeth-2103217_1280.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+@media screen (max-width: 350px) {
+    
 }
