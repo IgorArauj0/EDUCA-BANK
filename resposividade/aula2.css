@@ -1,54 +1,160 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 header {
-    padding: 2rem 1rem; /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
-    background-color: aquamarine;
+    padding: 2rem 1rem;
+    /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
+    background-color: #493d3f;
 }
 
 .container {
-padding: 5rem 2rem;
-background-color: blueviolet;
-display: flex;
-justify-content: center;
-flex-wrap: wrap; /*Fará com que as caixas possam ser quebradas se necessário (quando não houver espaço)*/
-align-content: center; /*propriedade que será usada para alinhar as caixas quando quebradas*/
+    padding: 6rem 3rem;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /*Fará com que as caixas possam ser quebradas se necessário (quando não houver espaço)*/
+    align-content: flex-end;
+    /*propriedade que será usada para alinhar as caixas quando quebradas*/
 
 }
-
-.sessao01{
-background-image: url(../imagens/cliffs-9444605_1280.jpg);
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-
-
-}
-
 
 .container div {
-border: 10px solid orange; /*(2px = espessura da borda) (solid = Tipo da borda) (orange = cor da borda)*/
-width: 20rem; /*largura da caixa*/
-height: 20rem; /*Altura da caixa*/
-margin: 10px;/*Espaçamento de todos os lados externos da caixa usando o margin*/
-min-width: 299px;/*Limitando o tamanho mínimo que a caixa terá (ela não ficará menor que 299px)*/
+    /* border: 10px solid orange; (2px = espessura da borda) (solid = Tipo da borda) (orange = cor da borda)*/
+    width: 30rem;
+    /*largura da caixa*/
+    height: 20rem;
+    /*Altura da caixa*/
+    margin: 10px;
+    /*Espaçamento de todos os lados externos da caixa usando o margin*/
+    min-width: 299px;
+    /*Limitando o tamanho mínimo que a caixa terá (ela não ficará menor que 299px)*/
 }
 
-.dombosco {
-    background-image: url(../imagens/brush-teeth-2103217_1280.jpg);
+
+.sessao01 {
+    background: linear-gradient(180deg, #290a9b6b 8.33%, #09446ccb 100%), url(../imagens/cliffs-9444605_1280.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    justify-content: start;
+
+}
+
+
+.div01 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.3rem;
+
+}
+
+.div01 p {
+    font-size: 2rem;
+}
+
+.div01 button {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15rem;
+    background-color: #464543;
+    color: white;
+    font-weight: 700;
+    border: none;
 }
 
 
 
+span {
+    color: yellow;
+    font-size: 3rem;
+}
+
+
+.dombosco {
+    background-color: #493d3f;
+
+}
+
+.div-img img {
+    width: 20rem;
+    border-radius: 10px;
+}
 
 
 
-@media screen (max-width: 350px) {
-    
+.div-paragrafo p {
+    color: white;
+    font-size: 1.8rem;
+    margin-top: 1.5rem;
+}
+
+.sessao03 {
+    background-color: #5a5955;
+}
+
+
+.div-sessao4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sessao04 {
+    background-image: url(../imagens/hallway-2228277_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.sessao04 button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 15rem;
+    background-color: #464543;
+    color: white;
+    font-weight: 700;
+    border: none;
+}
+
+
+footer {
+    padding: 2rem 1rem;
+    /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
+    background-color: #493d3f;
+}
+
+
+
+@media (max-width: 768px) {
+    .div01 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .div01 p {
+        font-size: 1.6rem;
+        margin: 25px;
+    }
+
+    .sessao03 {
+        gap: 5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .div-sessao4 button {
+        width: 12rem;
+        border: none;
+    }
+
 }
