@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*Tornando as caixas adaptaveis (caixas não ficam sobrando dentro dos elementos)*/
 }
 
 header {
@@ -12,12 +12,11 @@ header {
 
 .container {
     padding: 6rem 3rem;
-    background-color: blueviolet;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     /*Fará com que as caixas possam ser quebradas se necessário (quando não houver espaço)*/
-    align-content: flex-end;
+    align-content: center;
     /*propriedade que será usada para alinhar as caixas quando quebradas*/
 
 }
@@ -50,7 +49,7 @@ header {
     color: white;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
     font-size: 1.3rem;
 
 }
