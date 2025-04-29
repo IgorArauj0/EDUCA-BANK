@@ -6,19 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="aula2.css">
+    <script src="https://kit.fontawesome.com/5729e0ff2e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
     <header>
 
-        <nav>
-            <ul class="ul-list">
-                <li><a href="">teste</a></li>
-                <li><a href="">teste</a></li>
-                <li><a href="">teste</a></li>
-            </ul>
-        </nav>
+
+        <div>
+            <img src="../imagens/air-hot-balloon.png" alt="logo" class="logo-header">
+        </div>
+
+        <div>
+
+            <nav class="nav-header">
+                <ul class="ul-list">
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+                    <li>
+                        <a href="">TESTE</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+
+        <button class="hamburger" id="hamburgerButton">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </header>
 
@@ -76,7 +97,61 @@
 
     <footer>
 
+        <div class="content">
+
+            <div class="img-line">
+                <img src="../imagens/air-hot-balloon.png" alt="logo" class="logo-header">
+                <hr class="line">
+            </div>
+
+            <div class="sociais">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+
+        </div>
+
+
+
+
+        <div class="list-footer">
+            <nav class="nav-footer">
+                <ul class="ul-footer">
+                    <li>
+                        <a href="">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="">Políticas de privacidades</a>
+                    </li>
+                    <li>
+                        <a href="">Lei Geral de Proteção de Dados</a>
+                    </li>
+                    <li>
+                        <a href="">Nossos Parceiros</a>
+                    </li>
+                    <li>
+                        <a href="">Seja Membro</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </footer>
+
+
+
+    ... <!-- Conteúdo da página -->
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>

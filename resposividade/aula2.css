@@ -2,18 +2,54 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /*Tornando as caixas adaptaveis (caixas não ficam sobrando dentro dos elementos)*/
+    list-style: none;
 }
 
 header {
     padding: 2rem 1rem;
     /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
     background-color: #493d3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+   
+        position: sticky;
+        top: 0;
+        left: 0;
+        
+        z-index: 1000;
+   
+      
 }
 
-ul {
+.hamburger {
+    display: none;
+}
+
+
+.logo-header {
+    width: 5rem;
+}
+
+.nav-header {
     display: flex;
-    justify-content: space-evenly;
-    
+    justify-content: end;
+}
+
+
+.ul-list{
+    display: flex;
+    gap: 20px;
+}
+
+.ul-list a {
+    color: rgb(20, 20, 20);
+    text-decoration: none;
+    background-color: #ededf0;
+    font-weight: 700;
+    padding: 0.5rem 1.3rem;
 }
 
 
@@ -132,15 +168,76 @@ span {
 }
 
 
+
+/* INICIO DA ESTILIZAÇÃO NO RODAPÉ */
+
+
+
 footer {
     padding: 2rem 1rem;
     /*preenchimento superior e infoerior com (2rem), preenchimento laterais esqueda e direita*/
     background-color: #493d3f;
+    display: flex;
+    justify-content: space-evenly;
 }
+
+
+.ul-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ul-footer a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sociais {
+    padding: rem;
+    display: flex;
+    gap: 10px;
+}
+
+.sociais i {
+    color: white;
+    font-size: 2rem;
+    
+}
+
+.line {
+    margin: 1rem;
+    width: 10rem;
+}
+
+/* FIM DA ESTILIZAÇÃO DO RODAPÉ */
+
 
 
 
 @media (max-width: 768px) {
+
+   .logo-header {
+    width: 3rem;
+   }
+
+
     .div01 {
         display: flex;
         justify-content: center;
@@ -166,6 +263,23 @@ footer {
 
     .ul-list {
         display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        padding: 0.3rem;
+        background: transparent;
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .ul-footer {
+        text-align: center;
     }
 
 }
