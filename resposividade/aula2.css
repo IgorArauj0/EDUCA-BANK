@@ -10,6 +10,14 @@ header {
     background-color: #493d3f;
 }
 
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+
+
 .container {
     padding: 6rem 3rem;
     display: flex;
@@ -156,4 +164,19 @@ footer {
         border: none;
     }
 
+    .ul-list {
+        display: none;
+    }
+
 }
+
+
+/* 1) Agência de Viagens */
+/* 2) Escritório de Advocacia */
+/* 3) Clínica Veterinária */
+/* 4) Barbearia */
+
+
+
+
+
